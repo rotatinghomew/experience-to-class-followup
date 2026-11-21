@@ -1,0 +1,76 @@
+{
+  "cohorts": {
+    "summary": "事前分配、入口、候选课程和明示联络授权。",
+    "header": [
+      "wave",
+      "lead",
+      "school",
+      "intake",
+      "class",
+      "received",
+      "assignment",
+      "consent"
+    ]
+  },
+  "courses": {
+    "summary": "课程开放日历与共享组。组内名额不是各课程相加，组容量另表规定。",
+    "header": [
+      "class",
+      "class_group",
+      "school",
+      "opens",
+      "closes",
+      "capacity",
+      "state"
+    ]
+  },
+  "quota": {
+    "summary": "每个共享班型的总资源上限。",
+    "header": [
+      "class_group",
+      "seats"
+    ]
+  },
+  "events": {
+    "summary": "记录取得时刻晚于业务发生时刻；switched 行的 class 为目的课。",
+    "header": [
+      "event",
+      "lead",
+      "class",
+      "kind",
+      "happened",
+      "received"
+    ]
+  },
+  "commitments": {
+    "summary": "邀请通知和班位实际接受状态；有效期用自然日。",
+    "header": [
+      "class",
+      "lead",
+      "state",
+      "issued",
+      "expires"
+    ]
+  },
+  "identity_candidates": {
+    "summary": "两个入口发现的可匹配记录，同一个候选组必须共同求可相容身份；confirmed 优先。",
+    "header": [
+      "left",
+      "right",
+      "group",
+      "decision",
+      "received"
+    ]
+  },
+  "opening_changes": {
+    "summary": "课程规则可部分变更，场地再次开放不撤销学员的拒收意思。",
+    "header": [
+      "event",
+      "class",
+      "state",
+      "opens",
+      "closes",
+      "received"
+    ]
+  }
+}

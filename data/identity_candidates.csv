@@ -1,0 +1,6 @@
+left,right,group,decision,received
+Q-3-1-4,Q-3-1-7,G0,confirmed,2026-06-02
+Q-9-0-1,Q-9-0-4,G1,possible,2026-08-18
+Q-9-0-1,Q-9-0-8,G1,possible,2026-08-18
+Q-9-0-3,Q-9-0-4,G1,possible,2026-08-18
+Q-9-0-1,Q-9-0-4,G1,excluded,2026-08-23
