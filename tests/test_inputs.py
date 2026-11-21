@@ -22,3 +22,13 @@ class SourceRecords(unittest.TestCase):
         self.assertTrue({'switched','refused','accepted'} <= {row['kind'] for row in tables['events'] if row['event'].startswith('E-final')})
         self.assertTrue(any(row['state']=='suspended' for row in tables['opening_changes']))
         self.assertTrue(any(row['decision']=='excluded' for row in tables['identity_candidates']))
+
+    def test_each_second_assignment_has_a_prior_observation(self):
+        tables = read_tables()
+        first = {row['lead']:row for row in tables['cohorts']}
+        for row in tables['stage_two']:
+            self.assertGreater(row['decision_at'],first[row['lead']]['received'])
+            if row['eligible']=='no':
+                self.assertFalse(row['assignment'] or row['probability'])
+        self.assertTrue(any(row['eligible']=='yes' and not row['probability'] for row in tables['stage_two']))
+        self.assertTrue({'control','accepted','transfer_confirmed'} <= {row['state'] for row in tables['held_controls']})

@@ -1,0 +1,6 @@
+event,class,lead,state,expiry,next_class,received
+Q01,W9-0-A,Q-9-0-0,control,2026-08-24,W9-0-B,2026-08-20T08:05
+Q02,W9-0-A,Q-9-0-3,control,2026-08-25,,2026-08-20T08:05
+Q03,W9-0-A,Q-9-0-1,accepted,2026-08-23,W9-0-B,2026-08-20T08:05
+Q04,W9-0-B,Q-9-0-6,control,2026-08-25,,2026-08-21T10:00
+Q05,W9-0-B,Q-9-0-1,transfer_confirmed,2026-08-29,,2026-08-23T11:30

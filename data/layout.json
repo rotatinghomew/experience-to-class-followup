@@ -9,6 +9,7 @@
       "class",
       "received",
       "assignment",
+      "probability",
       "consent"
     ]
   },
@@ -70,6 +71,31 @@
       "state",
       "opens",
       "closes",
+      "received"
+    ]
+  },
+  "stage_two": {
+    "summary": "历史二次分配及当时可见资格。probability 空白表示没有事前可用的分配概率。",
+    "header": [
+      "assignment_id",
+      "lead",
+      "class",
+      "decision_at",
+      "eligible",
+      "assignment",
+      "probability",
+      "reason"
+    ]
+  },
+  "held_controls": {
+    "summary": "本期送出的对照与暂时保留的名额条件；转至其他课程需明示联系授权。",
+    "header": [
+      "event",
+      "class",
+      "lead",
+      "state",
+      "expiry",
+      "next_class",
       "received"
     ]
   }

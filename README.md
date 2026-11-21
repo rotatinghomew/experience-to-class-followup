@@ -13,6 +13,8 @@
 - `commitments.csv`：邀请通知和班位实际接受状态；有效期用自然日。
 - `identity_candidates.csv`：两个入口发现的可匹配记录，同一个候选组必须共同求可相容身份；confirmed 优先。
 - `opening_changes.csv`：课程规则可部分变更，场地再次开放不撤销学员的拒收意思。
+- `stage_two.csv`：历史二次分配及当时可见资格。probability 空白表示没有事前可用的分配概率。
+- `held_controls.csv`：本期送出的对照与暂时保留的名额条件；转至其他课程需明示联系授权。
 
 ## 本地检查
 
